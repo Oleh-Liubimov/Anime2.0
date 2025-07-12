@@ -1,16 +1,20 @@
 import RootLayout from "@/src/components/navigation/RootLayout";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { StatusBar, StyleSheet, View } from "react-native";
+import React from "react";
+import { StatusBar, StyleSheet } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const queryClient = new QueryClient();
 
 export default function TabLayout() {
   return (
     <QueryClientProvider client={queryClient}>
-      <View style={[{ flex: 1 }, StyleSheet.absoluteFillObject]}>
+      <GestureHandlerRootView
+        style={[{ flex: 1 }, StyleSheet.absoluteFillObject]}
+      >
         <StatusBar />
         <RootLayout />
-      </View>
+      </GestureHandlerRootView>
     </QueryClientProvider>
   );
 }

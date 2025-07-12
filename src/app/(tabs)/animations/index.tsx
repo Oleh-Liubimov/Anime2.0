@@ -17,6 +17,12 @@ const AnimationsScreen = () => {
       <Link href="/(tabs)/animations/carousel" push asChild>
         <Button title="Carousel" />
       </Link>
+      <Link href="/(tabs)/animations/animatedTwo" push asChild>
+        <Button title="Reanimated cubes" />
+      </Link>
+      <Link href="/(tabs)/animations/headerAnimation" push asChild>
+        <Button title="Header animation" />
+      </Link>
     </View>
   );
 };
