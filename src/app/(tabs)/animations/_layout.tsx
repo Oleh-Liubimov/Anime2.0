@@ -34,6 +34,7 @@ export default function Layout() {
         }}
       />
       <Stack.Screen name="headerAnimation" options={{ headerShown: false }} />
+      <Stack.Screen name="deleteAnimation" />
     </Stack>
   );
 }

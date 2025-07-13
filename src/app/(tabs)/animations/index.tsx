@@ -23,6 +23,9 @@ const AnimationsScreen = () => {
       <Link href="/(tabs)/animations/headerAnimation" push asChild>
         <Button title="Header animation" />
       </Link>
+      <Link href="/(tabs)/animations/deleteAnimation" push asChild>
+        <Button title="Delete animation" />
+      </Link>
     </View>
   );
 };
